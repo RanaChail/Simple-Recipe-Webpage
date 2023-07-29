@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(90deg, #FFDEE9 0%, #B5FFFC 100%);
+}
+
+
+/* Header Section  */
+
+nav{
+    width: 100%;
+    overflow-x: none;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.nav-container{
+    width: 100vw;
+    min-height: 80px;
+    background-color: #0093E9;
+    background-image: linear-gradient(106deg, #0093E9 0%, #80D0C7 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlist{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    align-items: center;
+}
+
+.navlist li p{
+    font-size: 2.2rem;
+    font-weight: 700;
+    font-family: 'Lumanosimo', cursive;
+    color:white;
+}
+
+.navlist li a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: azure;
+}
+
+#navitems{
+    display: flex;
+    gap: 20px;
+}
+
+
+/* Footer Section  */
+
+footer{
+    width: 100%;
+}
+
+.footerBox{
+    background-color: #0093E9;
+    background-image: linear-gradient(106deg, #0093E9 0%, #80D0C7 100%);
+    min-height: 40px;
+    text-align: center;
+    width: 100%;
+}
+
+.footerBox p{
+    color: white;
+    font-size: 2rem;
+}
+
+
+/* Main Content  */
+.contentBox{
+    width: 70%;
+    margin: auto;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    padding: 40px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 10px 25px rgb(48, 48, 48);
+}
+
+.rightBox{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all .5s ease 0s;
+}
+
+.rightBox img{
+    width: 300px;
+    height: 100%;
+    border-radius: 15px;
+    margin-right: 25px;
+}
+
+.rightBox:hover{
+    transform: scale(1.2);
+    box-shadow: 1px 1px 10px rgb(31, 31, 31);
+}
+
+.leftBox{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.leftBox h2{
+    font-size: 1.8rem;
+    color: rgb(130, 40, 40);
+    font-family: cursive;
+}
+
+.leftBox h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+
+.ingredients li{
+    font-size: 1.2rem;
+}
+
+.recipe li{
+    font-size: 1rem;
+}
+
+.rightBox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(34, 34, 34, 0.555);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.rightBox .overlay:hover{
+    opacity: 1;
+}
+
+.rightBox .overlay span{
+    font-size: 1.1rem;
+    color: white;
+}
